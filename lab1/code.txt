@@ -1,0 +1,21 @@
+A different approach to the problem is based on the observation that the images of a Lambertian
+surface, taken from a fixed viewpoint but under varying illumination, lie in a 3D linear
+subspace of the image space [43]. A number of appearance-based methods exploit this fact to
+model the variability of faces under changing illumination. Belhumeur et al.[4] extended the
+eigenface algorithm of Turk and Pentland [47] to fisherfaces by employing a classifier based on
+Fisher’s linear discriminant analysis. In experiments on a face database with strong variations
+in illumination fisherfaces outperform eigenfaces by a wide margin. Further work in the area
+by Belhumeur and Kriegman showed that the set of images of an object in fixed pose but under
+varying illumination forms a convex cone in the space of images [5]. The illumination cones of
+human faces can be approximated well by low-dimensional linear subspaces [16]. An algorithm
+based on this method outperforms both eigenfaces and fisherfaces. More recently Basri and Jacobs
+showed that the illumination cone of a convex Lambertian surface can be approximated
+by a nine-dimensional linear subspace [3]. In limited experiments good recognition rates across
+illumination conditions are reported.
+Common to all these appearance-based methods is the need for training images of database
+subjects under a number of different illumination conditions. An algorithm proposed by Sim
+and Kanade overcomes this restriction [45]. They used a statistical shape-from-shading model
+to recover the face shape from a single image and synthesize the face under a new illumination.
+Using this method they generated images of the gallery subjects under many different illumination
+conditions to serve as gallery images in a recognizer based on PCA. High recognition
+rates are reported on the illumination subset of the CMU PIE database [46].
