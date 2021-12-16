@@ -1,0 +1,4 @@
+A different approach to the problem is based on the observation that the images of a Lambertian
+surface, taken from a fixed viewpoint but under varying illumination, lie in a 3D linear
+subspace of the image space [43]. A number of appearance-based methods exploit this fact to
+
